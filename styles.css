@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: 500;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+p{
+    font-family: Georgia;
+    font-size: 4em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.neomorphic-container {
+    text-align: center;
+    display: float;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px #b7b7b7;
+}
+.neomorphic-container {    
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.stopwatch-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 20px #b7b7b7;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+.controls button, .toggle-container {
+    margin: 5px;
+    padding: 15px;
+    font-size: 1em;
+    font-family: 'Times New Roman';
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #b7b7b7;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.controls button i {
+    font-size: 1.5em;
+}
+
+.toggle-container:hover, .controls button:hover {
+    box-shadow: inset 10px 10px 20px #b7b7b7, inset -10px -10px 20px #f8f8f8;
+}
+
+.toggle-container {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #1a1a1a;
+}
+
+.toggle-container i {
+    font-size: 2em;
+    animation: ease-in-out 5s;
+}
+
+/*.toggle-container i:hover {
+    box-shadow: inset 10px 10px 20px #ffffff;
+}*/
+
+#lapList {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#lapList li {
+    margin: 5px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+}
